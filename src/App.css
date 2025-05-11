@@ -31,7 +31,7 @@ body {
 
 .container {
   max-width: 800px;
-  background: rgb(83, 82, 82);
+  background: rgb(224, 224, 224);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
