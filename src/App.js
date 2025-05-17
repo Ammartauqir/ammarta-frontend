@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import { useEffect, useState } from "react";
 import './App.css';
+import ThemeToggle from "./components/ThemeToggle";
+import React from 'react';
+import FullName from './FullName';
 
 function App() {
   const [data, setData] = useState(null);
@@ -12,10 +15,12 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-    <header>
-      <h1>Muhammad Ammar Tauqir</h1>
+    <div className="container min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300">
+    <header className="p-4 flex justify-end">
+      <FullName/>
+      <ThemeToggle />
       <p>Email: ammar.tauqir2@gmail.com | Phone: +4917673209858 | Location: Ingolstadt, Germany</p>
+
     </header>
 
     <section>
