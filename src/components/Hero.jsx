@@ -7,7 +7,7 @@ const Hero = () => {
       <img
         src={profileImage}
         alt="Profile"
-        className="w-30 h-30 rounded-full border-4 dark:border-white mb-6"
+        className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover overflow-hidden border-4 dark:border-white mb-6"
       />
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">Hi, I'm Ammar</h1>
       <p className="text-lg md:text-xl text-gray-500 max-w-xl mb-6">
