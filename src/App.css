@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .App {
   text-align: center;
 }
@@ -26,7 +30,7 @@
   }
 }
 
-body {
+bodyy {
   margin-bottom: 0px;
   margin-left: 60px;
   margin-top: 0px;
@@ -40,30 +44,25 @@ body {
 
 
 
-.container {
+.containerr {
   max-width: 800px;
   background: rgb(224, 224, 224);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  @apply font-bold text-4xl bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100;
-}
-
-h2 {
-  @apply h-10 font-bold text-xl bg-gray-200 text-gray-900 dark:bg-gray-800 dark:text-gray-100;
-}
 
 .section {
   margin-bottom: 20px;
+  margin-left: 40;
+  @apply bg-white dark:bg-black text-gray-950 dark:text-white
 }
 
 
 
 
 
-.App-header {
+.App-headerr {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -84,7 +83,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;          /* Full width */
-  background-color: #333;
+  background-color: #303030;
   color: white;
   padding: 1rem;
   z-index: 1000;        /* On top of other elements */

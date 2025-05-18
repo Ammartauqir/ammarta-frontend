@@ -16,11 +16,11 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white duration-300">
+    <div className="bg-white dark:bg-black text-gray-950 dark:text-white duration-300">
     <Header></Header>
     <Hero></Hero>
 
-    <section className="section ">
+    <section className="section">
       <h2 className="font-bold" >Summary</h2>
       <p>Email: ammar.tauqir2@gmail.com | Phone: +4917673209858 | Location: Ingolstadt, Germany</p>
       <p>Software Engineer with experience in automotive and embedded systems.</p>
