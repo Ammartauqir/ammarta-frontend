@@ -11,6 +11,7 @@ code {
     monospace;
 }
 
-.dark{
-  background-color: rgb(9, 9 , 11);
-}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

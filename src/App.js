@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import { useEffect, useState } from "react";
 import './App.css';
-import ThemeToggle from "./components/ThemeToggle";
 import React from 'react';
+import Header from './components/Header.jsx';
+import Hero from './components/Hero.jsx';
 import FullName from './FullName';
 
 function App() {
@@ -15,26 +16,18 @@ function App() {
   }, []);
 
   return (
-    <div className="container min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300">
-    <header className="p-4 flex justify-end">
-      <FullName/>
-      <ThemeToggle />
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white duration-300">
+    <Header></Header>
+    <Hero></Hero>
+
+    <section className="section ">
+      <h2 className="font-bold" >Summary</h2>
       <p>Email: ammar.tauqir2@gmail.com | Phone: +4917673209858 | Location: Ingolstadt, Germany</p>
-
-    </header>
-
-    <section>
-      <img src="AmmarTauqir_crop.jpg" alt="Resume Profile" width="200" height="230" />
-      <img src={logo} className="App-logo" alt="logo" width="150" height="115"/>
-    </section>
-
-    <section className="section">
-      <h2>Summary</h2>
       <p>Software Engineer with experience in automotive and embedded systems.</p>
     </section>
 
     <section className="section">
-      <h2>Experience</h2>
+      <h2  className="font-bold" >Experience</h2>
       <p><strong>Software Developer:</strong> E.Solutions GmbH (Nov 2022 -- Continued) Ingolstadt, Germany</p>
       <ul>
         <li>Working on automotive infotainment system testing tools development.</li>
@@ -67,13 +60,13 @@ function App() {
     </section>
 
     <section className="section">
-      <h2>Education</h2>
+      <h2 className="font-bold" >Education</h2>
       <p><strong>M.Sc. Automation & Robotics (Grade: 1.9)</strong> - TU Dortmund, Germany (Oct 2018-- Aug 2021) <strong>Thesis:</strong> LIDAR pointcloud Semantic Segmentation</p>
       <p><strong>B.Sc. Electrical Engineering (Grade: 1.6)</strong> - University of the Punjab, Pakistan (Nov 2013 -- Mar 2017) <strong>Thesis:</strong> Autonomous path planning for mobile robots</p>
     </section>
 
     <section className="section">
-      <h2>Skills</h2>
+      <h2  className="font-bold">Skills</h2>
       <ul>
         <li>Python</li>
         <li>C/C++</li>
@@ -85,7 +78,7 @@ function App() {
     </section>
 
     <section className="section">
-      <h2>Interests</h2>
+      <h2 className="font-bold">Interests</h2>
       <ul>
         <li>Embedded Systems</li>
         <li>Robotics</li>
@@ -97,7 +90,7 @@ function App() {
     </section>
 
     <section className="section">
-      <h2>Publications</h2>
+      <h2 className="font-bold">Publications</h2>
       <ul>
         <li>[1] A. Tauqir, B. Wang (2021). LIDAR Semantic Segmentation Cross-Dataset Learning and Evaluation. IEEE ICRA 2022.</li>
         <li>[2] Huang, Y., Wu, Ammar T., et al. (2020). Perception vs. Reality - IPSN 2020.</li>
@@ -108,7 +101,7 @@ function App() {
     </section>
 
     <section className="section">
-      <h2>Projects</h2>
+      <h2 className="font-bold">Projects</h2>
       <ul>
         <li>LIDAR semantic segmentation: Point-wise classification, voxelization, 3D convnet.</li>
         <li>Breathing pattern detector: Used thermal camera and nose tracking for inhale/exhale detection.</li>

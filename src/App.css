@@ -47,8 +47,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-  color: #333;
+h1 {
+  @apply font-bold text-4xl bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+}
+
+h2 {
+  @apply h-10 font-bold text-xl bg-gray-200 text-gray-900 dark:bg-gray-800 dark:text-gray-100;
 }
 
 .section {
@@ -75,3 +79,14 @@ h1, h2 {
 }
 
 
+.header {
+  position: fixed;      /* Stays on top */
+  top: 0;
+  left: 0;
+  width: 100%;          /* Full width */
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;        /* On top of other elements */
+  text-align: center;
+}
