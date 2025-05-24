@@ -14,8 +14,8 @@ const Hero = () => {
         Software Engineer and AI enthusiast
       </p>
       <div className="space-x-4">
-        <a href="https://huggingface.co/spaces/AmmarTauqir/vertual_resume_conversation_3" className="bg-gray-200 dark:bg-white text-black px-6 py-2 rounded shadow hover:bg-gray-300 dark:hover:bg-gray-200 transition duration-300">
-          Ask me a Question 
+        <a href="https://huggingface.co/spaces/AmmarTauqir/virtual_resume" className="bg-gray-200 dark:bg-white text-black px-6 py-2 rounded shadow hover:bg-gray-300 dark:hover:bg-gray-200 transition duration-300">
+          Ask my Virtual Assistant  
         </a>
         <a href="#projects" className="bg-transparent border border-gray-900 dark:border-white text-gray-900 dark:text-white px-6 py-2 rounded hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
           View Projects

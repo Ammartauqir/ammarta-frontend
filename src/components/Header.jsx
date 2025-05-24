@@ -3,7 +3,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full shadow z-50 duration-300">
+    <header className="fixed top-0 w-full shadow z-50 duration-300 backdrop-filter backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold">Muhammad Ammar Tauqir | Portfolio</h1>
         <nav className="space-x-8">
