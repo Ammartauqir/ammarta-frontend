@@ -4,7 +4,7 @@ import './App.css';
 import React from 'react';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
-import FullName from './FullName';
+import AboutMe from './components/Aboutme.jsx';
 
 function App() {
   const [data, setData] = useState(null);
@@ -19,6 +19,7 @@ function App() {
     <div className="bg-white dark:bg-black text-gray-950 dark:text-white duration-300">
     <Header></Header>
     <Hero></Hero>
+    <AboutMe></AboutMe>
 
     <section className="section">
       <h2 className="font-bold" >Summary</h2>

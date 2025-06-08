@@ -1,9 +1,9 @@
-import profileImage from '../assets/AmmarTauqir_crop.jpg'; // Put your image here
+import profileImage from '../assets/AmmarTauqir_crop5.jpg';
 import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="bg-white text-dark dark:bg-dark dark:text-white duration-300 min-h-screen flex flex-col justify-center items-center pt-24 text-center px-4">
+    <section className="bg-zinc-200 text-dark dark:bg-zinc-950 dark:text-white duration-300 min-h-screen flex flex-col justify-center items-center pt-24 text-center px-4">
       <img
         src={profileImage}
         alt="Profile"
