@@ -11,15 +11,19 @@ const Hero = () => {
       />
       <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Ammar</h1>
       <p className="text-lg md:text-xl text-gray-500 dark:text-gray-300 max-w-xl mb-6">
-        Software Engineer and AI enthusiast
+        Software Developer | Robotics & AI Innovator
       </p>
       <div className="space-x-4">
         <a href="https://huggingface.co/spaces/AmmarTauqir/virtual_resume" className="bg-gray-200 dark:bg-white text-black px-6 py-2 rounded shadow hover:bg-gray-300 dark:hover:bg-gray-200 transition duration-300">
-          Ask my Virtual Agent  
+          AI Resume Bot
+        </a>
+        <a href="mailto:ammar.tauqir2@gmail.com" className="bg-transparent border border-gray-900 dark:border-white text-gray-900 dark:text-white px-6 py-2 rounded hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
+          Get in touch
         </a>
         <a href="#projects" className="bg-transparent border border-gray-900 dark:border-white text-gray-900 dark:text-white px-6 py-2 rounded hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
           View Projects
-        </a>
+        </a >
+
       </div>
     </section>
   );
