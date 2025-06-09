@@ -90,22 +90,27 @@ const Header = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex items-center space-x-4">
           <button onClick={handleHomeClick} className="hover:underline">
             Home
           </button>
+          <span className="text-gray-300 dark:text-gray-600">|</span>
           <button onClick={handleAboutClick} className="hover:underline">
             About me
           </button>
+          <span className="text-gray-300 dark:text-gray-600">|</span>
           <button onClick={handleProjectsClick} className="hover:underline">
             Projects
           </button>
+          <span className="text-gray-300 dark:text-gray-600">|</span>
           <button onClick={handleBlogClick} className="hover:underline">
             Blog
           </button>
+          <span className="text-gray-300 dark:text-gray-600">|</span>
           <button onClick={handleContactClick} className="hover:underline">
             Contact
           </button>
+          <span className="text-gray-300 dark:text-gray-600">|</span>
           <ThemeToggle />
         </nav>
 
@@ -115,23 +120,28 @@ const Header = () => {
             isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
           }`}
         >
-          <nav className="flex flex-col p-4 space-y-4">
-            <button onClick={handleHomeClick} className="hover:underline text-left">
+          <nav className="flex flex-col p-4 space-y-2">
+            <button onClick={handleHomeClick} className="hover:underline text-left py-1">
               Home
             </button>
-            <button onClick={handleAboutClick} className="hover:underline text-left">
+            <div className="h-px bg-gray-200 dark:bg-gray-700"></div>
+            <button onClick={handleAboutClick} className="hover:underline text-left py-1">
               About me
             </button>
-            <button onClick={handleProjectsClick} className="hover:underline text-left">
+            <div className="h-px bg-gray-200 dark:bg-gray-700"></div>
+            <button onClick={handleProjectsClick} className="hover:underline text-left py-1">
               Projects
             </button>
-            <button onClick={handleBlogClick} className="hover:underline text-left">
+            <div className="h-px bg-gray-200 dark:bg-gray-700"></div>
+            <button onClick={handleBlogClick} className="hover:underline text-left py-1">
               Blog
             </button>
-            <button onClick={handleContactClick} className="hover:underline text-left">
+            <div className="h-px bg-gray-200 dark:bg-gray-700"></div>
+            <button onClick={handleContactClick} className="hover:underline text-left py-1">
               Contact
             </button>
-            <div className="pt-2">
+            <div className="h-px bg-gray-200 dark:bg-gray-700"></div>
+            <div className="pt-1">
               <ThemeToggle />
             </div>
           </nav>
