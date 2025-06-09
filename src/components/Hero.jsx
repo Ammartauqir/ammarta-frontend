@@ -1,4 +1,4 @@
-import profileImage from '../assets/AmmarTauqir_crop5.jpg';
+import profileImage from '../assets/AmmarTauqir_crop1.jpg';
 import React from 'react';
 
 const Hero = () => {
