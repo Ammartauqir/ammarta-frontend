@@ -29,11 +29,24 @@ const Header = () => {
             onClick={handleAboutClick} 
             className="hover:underline"
           >
-            About
+            About me
+          </button>
+          <button 
+            onClick={() => {
+              navigate('/');
+              setTimeout(() => {
+                const element = document.getElementById('projects');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }, 100);
+            }}
+            className="hover:underline"
+          >
+            Projects
           </button>
           <Link to="/blog" className="hover:underline">Blog</Link>
-          <a href="#projects" className="hover:underline">Projects</a>
-          <a href="#contact" className="hover:underline">Contact</a>
+          <a href="#contact" className="hover:underline">Contact me</a>
           <ThemeToggle />
         </nav>
       </div>

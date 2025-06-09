@@ -8,6 +8,8 @@ import Hero from './components/Hero.jsx';
 import AboutMe from './components/Aboutme.jsx';
 import AboutPage from './components/AboutPage.jsx';
 import BlogPage from './components/BlogPage.jsx';
+import Projects from './components/Projects.jsx';
+import ProjectsPage from './components/ProjectsPage.jsx';
 
 function App() {
   const [data, setData] = useState(null);
@@ -27,10 +29,12 @@ function App() {
             <>
               <Hero />
               <AboutMe />
+              <Projects />
             </>
           } />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
       </div>
     </Router>
