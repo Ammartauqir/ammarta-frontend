@@ -53,6 +53,25 @@ const GitHubSection = () => {
             <p className="text-zinc-600 dark:text-zinc-400 mb-6">
               Follow my coding journey, explore my repositories, and let's collaborate on exciting projects.
             </p>
+            
+            {/* GitHub Stats */}
+            <div className="grid grid-cols-2 gap-4 mb-6">
+              <div className="bg-zinc-50 dark:bg-zinc-700 p-4 rounded-lg">
+                <img
+                  src="https://github-readme-stats.vercel.app/api?username=ammartauqir&show_icons=true&theme=dark&hide_border=true"
+                  alt="GitHub Stats"
+                  className="w-full"
+                />
+              </div>
+              <div className="bg-zinc-50 dark:bg-zinc-700 p-4 rounded-lg">
+                <img
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ammartauqir&layout=compact&theme=dark&hide_border=true"
+                  alt="Top Languages"
+                  className="w-full"
+                />
+              </div>
+            </div>
+
             <a
               href="https://github.com/ammartauqir"
               target="_blank"
