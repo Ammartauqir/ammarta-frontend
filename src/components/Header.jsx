@@ -5,6 +5,17 @@ import ThemeToggle from "./ThemeToggle";
 const Header = () => {
   const navigate = useNavigate();
 
+  const handleHomeClick = (e) => {
+    e.preventDefault();
+    if (window.location.pathname === '/') {
+      // If already on home page, scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // If on another page, navigate to home
+      navigate('/');
+    }
+  };
+
   const handleAboutClick = () => {
     // First navigate to home if we're not there
     navigate('/');
@@ -24,14 +35,16 @@ const Header = () => {
           Muhammad Ammar Tauqir | Portfolio
         </Link>
         <nav className="space-x-8">
-          <Link to="/" className="hover:underline">Home</Link>
-          <button 
+          <button onClick={handleHomeClick} className="hover:underline">
+            Home
+          </button>
+          <button
             onClick={handleAboutClick} 
             className="hover:underline"
           >
             About me
           </button>
-          <button 
+          <button
             onClick={() => {
               navigate('/');
               setTimeout(() => {

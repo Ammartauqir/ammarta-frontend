@@ -12,6 +12,7 @@ import Projects from './components/Projects.jsx';
 import ProjectsPage from './components/ProjectsPage.jsx';
 import ContactPage from './components/ContactPage.jsx';
 import GitHubSection from './components/GitHubSection.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   const [data, setData] = useState(null);
@@ -40,6 +41,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
