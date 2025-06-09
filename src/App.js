@@ -10,6 +10,7 @@ import AboutPage from './components/AboutPage.jsx';
 import BlogPage from './components/BlogPage.jsx';
 import Projects from './components/Projects.jsx';
 import ProjectsPage from './components/ProjectsPage.jsx';
+import ContactPage from './components/ContactPage.jsx';
 
 function App() {
   const [data, setData] = useState(null);
@@ -35,6 +36,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>

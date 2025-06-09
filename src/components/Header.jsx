@@ -46,7 +46,7 @@ const Header = () => {
             Projects
           </button>
           <Link to="/blog" className="hover:underline">Blog</Link>
-          <a href="#contact" className="hover:underline">Contact me</a>
+          <Link to="/contact" className="hover:underline">Contact</Link>
           <ThemeToggle />
         </nav>
       </div>
