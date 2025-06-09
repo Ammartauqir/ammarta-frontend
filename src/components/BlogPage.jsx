@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlogPage = () => {
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-900 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-900 pt-24 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-center">Blog</h1>
         

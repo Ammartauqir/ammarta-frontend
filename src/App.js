@@ -11,6 +11,7 @@ import BlogPage from './components/BlogPage.jsx';
 import Projects from './components/Projects.jsx';
 import ProjectsPage from './components/ProjectsPage.jsx';
 import ContactPage from './components/ContactPage.jsx';
+import GitHubSection from './components/GitHubSection.jsx';
 
 function App() {
   const [data, setData] = useState(null);
@@ -31,6 +32,7 @@ function App() {
               <Hero />
               <AboutMe />
               <Projects />
+              <GitHubSection />
             </>
           } />
           <Route path="/about" element={<AboutPage />} />
