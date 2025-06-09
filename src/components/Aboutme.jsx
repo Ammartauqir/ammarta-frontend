@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const AboutMe = () => {
+  const navigate = useNavigate();
+
   return (
     <section
       className="relative bg-zinc-100 dark:bg-zinc-900 py-20 px-4 sm:px-6 lg:px-8"
@@ -24,7 +27,7 @@ const AboutMe = () => {
           <div className="bg-white dark:bg-zinc-800 rounded-2xl shadow p-6 hover:shadow-lg transition">
             <h3 className="text-2xl font-semibold mb-4 text-zinc-900 dark:text-white">Background</h3>
             <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
-              I’m Ammar Tauqir — a software engineer and tech creator based in Germany. I run
+              I'm Ammar Tauqir — a software engineer and tech creator based in Germany. I run
               <span className="font-medium text-zinc-900 dark:text-white"> myStudyDreams</span> and
               <span className="font-medium text-zinc-900 dark:text-white"> Blueberry Imaginations</span>, blending tech, education, and creativity.
             </p>
@@ -59,13 +62,15 @@ const AboutMe = () => {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <button className="group relative inline-flex items-center text-white bg-zinc-900 dark:bg-white dark:text-zinc-900 px-6 py-3 rounded font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all duration-300">
+          <button 
+            onClick={() => navigate('/about')}
+            className="group relative inline-flex items-center text-white bg-zinc-900 dark:bg-white dark:text-zinc-900 px-6 py-3 rounded font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all duration-300"
+          >
             Learn More About Me
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            <span className="font-bold ml-2 transform transition-transform duration-300 group-hover:translate-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
               <path d="M5 12h14"></path>
-              <path d="M12 5 7 7-7 7"></path>
-            </span>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
           </button>
         </div>
 
