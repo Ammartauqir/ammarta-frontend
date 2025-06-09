@@ -7,6 +7,7 @@ import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import AboutMe from './components/Aboutme.jsx';
 import AboutPage from './components/AboutPage.jsx';
+import BlogPage from './components/BlogPage.jsx';
 
 function App() {
   const [data, setData] = useState(null);
@@ -26,10 +27,10 @@ function App() {
             <>
               <Hero />
               <AboutMe />
-
             </>
           } />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/blog" element={<BlogPage />} />
         </Routes>
       </div>
     </Router>

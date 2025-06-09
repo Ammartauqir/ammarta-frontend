@@ -28,8 +28,7 @@ const AboutMe = () => {
             <h3 className="text-2xl font-semibold mb-4 text-zinc-900 dark:text-white">Background</h3>
             <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
               I'm Ammar Tauqir — a software engineer and tech creator based in Germany. I run
-              <span className="font-medium text-zinc-900 dark:text-white"> myStudyDreams</span> and
-              <span className="font-medium text-zinc-900 dark:text-white"> Blueberry Imaginations</span>, blending tech, education, and creativity.
+              <span className="font-medium text-zinc-900 dark:text-white"> myStudyDreams.com</span>, harvesting AI tech for education and creativity.
             </p>
           </div>
 
