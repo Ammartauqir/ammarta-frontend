@@ -19,7 +19,8 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/info")
+    // fetch("http://localhost:5000/api/info")
+    fetch("/api/info")
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
