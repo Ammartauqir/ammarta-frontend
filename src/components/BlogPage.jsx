@@ -13,7 +13,7 @@ const BlogPage = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('http://localhost:5000/api/subscribe', {
+      const response = await fetch('https://ammarta-backend.onrender.com/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

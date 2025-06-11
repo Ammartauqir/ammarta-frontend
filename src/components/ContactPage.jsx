@@ -21,7 +21,7 @@ const ContactPage = () => {
     setStatus({ type: "loading", message: "Sending message..." });
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://ammarta-backend.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

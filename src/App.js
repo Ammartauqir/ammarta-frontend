@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     // fetch("http://localhost:5000/api/info")
-    fetch("/api/info")
+    fetch("https://ammarta-backend.onrender.com/api/info")
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
