@@ -52,6 +52,11 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const handleSandboxClick = () => {
+    navigate('/sandbox');
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 w-full shadow z-50 duration-300 backdrop-blur-sm bg-white/80 dark:bg-zinc-900/80">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -107,6 +112,10 @@ const Header = () => {
             Blog
           </button>
           <span className="text-gray-300 dark:text-gray-600">|</span>
+          <button onClick={handleSandboxClick} className="hover:underline">
+            Sandbox
+          </button>
+          <span className="text-gray-300 dark:text-gray-600">|</span>
           <button onClick={handleContactClick} className="hover:underline">
             Contact
           </button>
@@ -135,6 +144,10 @@ const Header = () => {
             <div className="h-px bg-gray-200 dark:bg-gray-700"></div>
             <button onClick={handleBlogClick} className="hover:underline text-left py-1">
               Blog
+            </button>
+            <div className="h-px bg-gray-200 dark:bg-gray-700"></div>
+            <button onClick={handleSandboxClick} className="hover:underline text-left py-1">
+              Sandbox
             </button>
             <div className="h-px bg-gray-200 dark:bg-gray-700"></div>
             <button onClick={handleContactClick} className="hover:underline text-left py-1">

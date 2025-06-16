@@ -14,6 +14,7 @@ import ContactPage from './components/ContactPage.jsx';
 import GitHubSection from './components/GitHubSection.jsx';
 import Footer from './components/Footer.jsx';
 import BlogPost from './components/BlogPost.jsx';
+import SandboxPage from './components/SandboxPage.jsx';
 
 function App() {
   const [data, setData] = useState(null);
@@ -43,6 +44,7 @@ function App() {
           <Route path="/blog/agentic-ai" element={<BlogPost />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/sandbox" element={<SandboxPage />} />
         </Routes>
         <Footer />
       </div>

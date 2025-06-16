@@ -58,6 +58,14 @@ const Footer = () => {
               </li>
               <li>
                 <a
+                  href="/sandbox"
+                  className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >
+                  Sandbox
+                </a>
+              </li>
+              <li>
+                <a
                   href="/contact"
                   className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
