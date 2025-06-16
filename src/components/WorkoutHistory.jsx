@@ -20,14 +20,21 @@ const WorkoutHistory = () => {
   useEffect(() => {
     const fetchActivities = async () => {
       try {
+        console.log('Fetching activities from Strava...');
         const response = await fetch('https://ammarta-backend.onrender.com/api/strava/activities');
+        console.log('Response status:', response.status);
+        
         if (!response.ok) {
-          throw new Error('Failed to fetch activities');
+          const errorData = await response.json().catch(() => ({}));
+          throw new Error(`Failed to fetch activities: ${response.status} ${response.statusText} ${JSON.stringify(errorData)}`);
         }
+        
         const data = await response.json();
+        console.log('Received activities:', data);
         setActivities(data);
         setLoading(false);
       } catch (err) {
+        console.error('Error fetching activities:', err);
         setError(err.message);
         setLoading(false);
       }
@@ -71,8 +78,22 @@ const WorkoutHistory = () => {
 
   if (error) {
     return (
-      <div className="text-red-500 text-center p-4">
-        Error loading workout data: {error}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+          Workout History
+        </h2>
+        <div className="text-red-500 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
+          <p className="font-semibold mb-2">Error loading workout data</p>
+          <p className="text-sm">{error}</p>
+          <p className="text-sm mt-2">
+            This could be because:
+            <ul className="list-disc list-inside mt-1">
+              <li>The Strava API integration is not set up yet</li>
+              <li>The backend service is not running</li>
+              <li>There might be an issue with the API credentials</li>
+            </ul>
+          </p>
+        </div>
       </div>
     );
   }
