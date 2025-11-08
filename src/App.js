@@ -1,9 +1,6 @@
-import logo from './logo.svg';
-import { useEffect, useState } from "react";
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { API_ENDPOINTS } from './config/api';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import AboutMe from './components/Aboutme.jsx';
@@ -18,14 +15,6 @@ import BlogPost from './components/BlogPost.jsx';
 import SandboxPage from './components/SandboxPage.jsx';
 
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch(API_ENDPOINTS.INFO)
-      .then((res) => res.json())
-      .then((data) => setData(data.message))
-      .catch((err) => console.error('Error fetching info:', err));
-  }, []);
 
   return (
     <Router>
