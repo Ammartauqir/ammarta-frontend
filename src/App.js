@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { API_ENDPOINTS } from './config/api';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import AboutMe from './components/Aboutme.jsx';
@@ -20,10 +21,10 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    // fetch("http://localhost:5000/api/info")
-    fetch("https://ammarta-backend.onrender.com/api/info")
+    fetch(API_ENDPOINTS.INFO)
       .then((res) => res.json())
-      .then((data) => setData(data.message));
+      .then((data) => setData(data.message))
+      .catch((err) => console.error('Error fetching info:', err));
   }, []);
 
   return (

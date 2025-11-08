@@ -10,6 +10,7 @@ import {
   ResponsiveContainer
 } from 'recharts';
 import { format, parseISO } from 'date-fns';
+import { API_ENDPOINTS } from '../config/api';
 
 const WorkoutHistory = () => {
   const [activities, setActivities] = useState([]);
@@ -21,7 +22,7 @@ const WorkoutHistory = () => {
     const fetchActivities = async () => {
       try {
         console.log('Fetching activities from Strava...');
-        const response = await fetch('https://ammarta-backend.onrender.com/api/strava/activities');
+        const response = await fetch(API_ENDPOINTS.STRAVA_ACTIVITIES);
         console.log('Response status:', response.status);
         
         if (!response.ok) {

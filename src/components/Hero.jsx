@@ -23,7 +23,8 @@ const Hero = () => {
         <a href="#projects" className="bg-transparent border border-gray-900 dark:border-white text-gray-900 dark:text-white px-6 py-2 rounded hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-300">
           View Projects
         </a>
-      </div>
+      </div>.
+      
     </section>
   );
 };

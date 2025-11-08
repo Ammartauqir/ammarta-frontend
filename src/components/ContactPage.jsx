@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { API_ENDPOINTS } from '../config/api';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,7 @@ const ContactPage = () => {
     setStatus({ type: "loading", message: "Sending message..." });
 
     try {
-      const response = await fetch("https://ammarta-backend.onrender.com/api/contact", {
+      const response = await fetch(API_ENDPOINTS.CONTACT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
